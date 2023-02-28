@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block title %}UPDATE{% endblock title %}
+{% block content %}
+    <h3>update</h3>
+    <form  method="post">
+        {% csrf_token %}
+        {{form}}
+        <input type="submit" value="Güncelle">
+    </form>
+{% endblock content %}
